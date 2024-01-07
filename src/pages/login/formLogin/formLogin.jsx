@@ -83,7 +83,6 @@ const FormLogin = ({ onSearch, recoverPassword }) => {
             <Button
               onClick={recoverPassword}
               variant="contained"
-              className="recoverButton"
               startIcon={<MailOutlineIcon />}
             >
               Recuperar Contraseña
@@ -91,7 +90,6 @@ const FormLogin = ({ onSearch, recoverPassword }) => {
             <Button
               type="submit"
               variant="contained"
-              className="loginButton"
               startIcon={<VpnKeyIcon />}
             >
               Ingresar

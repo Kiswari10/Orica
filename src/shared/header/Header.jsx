@@ -5,14 +5,12 @@ const Header = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
 
     useEffect(() => {
-      // Actualizar la fecha cada segundo
       const intervalId = setInterval(() => {
         setCurrentDate(new Date());
       }, 1000);
   
-      // Limpiar el intervalo al desmontar el componente
       return () => clearInterval(intervalId);
-    }, []); // El efecto se ejecuta solo una vez al montar el componente
+    }, []); 
   
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const formattedDate = currentDate.toLocaleDateString('es-ES', options);

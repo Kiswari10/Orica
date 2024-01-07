@@ -1,39 +1,31 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .paper {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form {
-    width: 100%;
-    margin-top: 1rem;
-  }
-  
-  .textField {
-    margin-bottom: 1rem;
-  }
-  
-  .buttonsContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .recoverButton {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    width: 48%;
-  }
-  
-  .loginButton {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    width: 48%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paper {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+}
+
+.textField {
+  margin-bottom: 1rem;
+}
+
+.buttonsContainer {
+  display: block;
+  width: 100%;
+}
+
+.buttonsContainer button {
+  margin-top: 15px;
+  width: 100%; 
+  margin-bottom: 5px; 
+}
