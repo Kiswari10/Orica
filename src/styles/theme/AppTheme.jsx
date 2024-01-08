@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
-
 import { theme } from "./theme";
+import PropTypes from "prop-types";
 
 export const AppTheme = ({ children }) => {
   return (
@@ -11,3 +11,5 @@ export const AppTheme = ({ children }) => {
     </ThemeProvider>
   );
 };
+
+AppTheme.propTypes = { children: PropTypes.node.isRequired };

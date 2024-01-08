@@ -81,18 +81,19 @@ const FormLogin = ({ onSearch, recoverPassword }) => {
 
           <div className="buttonsContainer">
             <Button
-              onClick={recoverPassword}
-              variant="contained"
-              startIcon={<MailOutlineIcon />}
-            >
-              Recuperar Contraseña
-            </Button>
-            <Button
               type="submit"
               variant="contained"
               startIcon={<VpnKeyIcon />}
             >
               Ingresar
+            </Button>
+
+            <Button
+              onClick={recoverPassword}
+              color="secondary"
+              startIcon={<MailOutlineIcon />}
+            >
+              Recuperar Contraseña
             </Button>
           </div>
         </form>

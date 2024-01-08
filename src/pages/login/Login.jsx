@@ -1,20 +1,19 @@
 import Header from "../../shared/header/header";
+import useAuth from "../../shared/hooks/useAuth";
 import FormLogin from "./formLogin/formLogin";
 
-const handleSearch = (filters) => {
-  console.log("Filtros ->", filters);
-
-  //Si todo fue bien te lleva a la siguiente ventana
-  window.location.href = "/solution-generation";
-};
-
-const recoverPassword = () => {
-  console.log("Entro a Recuperar contraseña");
-
-  window.location.href = "/reset-password";
-};
-
 export const Login = () => {
+  const { login } = useAuth();
+
+  const handleSearch = (data) => {
+    login(data);
+  };
+
+  const recoverPassword = () => {
+    console.log("Entro a Recuperar contraseña");
+    window.location.href = "/reset-password";
+  };
+
   return (
     <div>
       <Header></Header>
