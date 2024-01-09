@@ -14,12 +14,13 @@ export const OptimizationResult = () => {
     <div>
       <Header></Header>
       <div className="container">
-        <div className="division">
-          <div className="valor01">
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
             <div>
               <h3>Valor de utilidad optima</h3>
               <p>50 USD</p>
             </div>
+
             <div>
               <h3>Valores de KPIs complementarios</h3>
               <div className="style-KPIs">
@@ -33,29 +34,19 @@ export const OptimizationResult = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="valor02">
+          </Grid>
+          <Grid item xs={6}>
             <div>
               <h3>Decisiones principales</h3>
               <p>Pruebaa</p>
+              <p>Pruebaa</p>
+              <p>Pruebaa</p>
+              <p>Pruebaa</p>
+              <p>Pruebaa</p>
+              <p>Pruebaa</p>
+              <p>Pruebaa</p>
+              <p>Pruebaa</p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            <div>Hola</div>
-          </Grid>
-          <Grid item xs={4}>
-            <div>Hola01</div>
-          </Grid>
-          <Grid item xs={4}>
-            <div>Hola02</div>
-          </Grid>
-          <Grid item xs={8}>
-            <div>Hola03</div>
           </Grid>
         </Grid>
       </div>
