@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navigate } from "react-router";
 import { Login, ResetPassword, SolutionGeneration, Dashboard } from "../pages";
 import { PrivateRoute } from "./PrivateRoute";
+import { OptimizationResult } from "../pages/optimization-results/OptimizationResults";
 
 export const AppRoutes = () => {
 
@@ -13,6 +14,12 @@ export const AppRoutes = () => {
         <Route
           path="/reset-password"
           element={<ResetPassword />}
+        />
+        <Route
+          path="/optimization-result"
+          element={
+            <OptimizationResult />
+          }
         />
         <Route
           path="/solution-generation"

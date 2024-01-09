@@ -1,0 +1,25 @@
+.container {
+  height: 100%;
+  margin: 0;
+}
+
+.division {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.valor01,
+.valor02 {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.style-KPIs {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  text-align: center;
+}
