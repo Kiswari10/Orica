@@ -14,7 +14,7 @@ export const MainLayout = ({ children }) => {
           paddingLeft: "54px !important",
           paddingRight: "54px !important",
         }}
-        maxWidth="xl"
+        maxWidth="lg"
       >
         <Toolbar />
         {children}

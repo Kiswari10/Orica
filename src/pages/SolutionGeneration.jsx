@@ -1,15 +1,16 @@
-import { useLocation } from "react-router-dom";
+import { Button, Container, Toolbar } from "@mui/material";
 
-import { MainLayout } from "../components";
+import { MainLayout, SolutionGenerationForm } from "../components";
 
 export const SolutionGeneration = () => {
-  const { state } = useLocation();
   return (
     <MainLayout>
-      <div>
-        <p>SolutionGeneration</p>
-        <p>Usuario: {state?.name}</p>
-      </div>
+      <Toolbar />
+      <SolutionGenerationForm />
+      <Toolbar />
+      <Container sx={{ display: "flex", justifyContent: "center" }}>
+        <Button variant="contained">Ejecutar escenario</Button>
+      </Container>
     </MainLayout>
   );
 };
